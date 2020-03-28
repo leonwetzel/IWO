@@ -40,11 +40,13 @@ def create_column_names(df):
             current_column = first_name
         elif "Unnamed" not in first_name:
             current_column = first_name
+        current_column = current_column.replace(" ", "_")
+        current_column = current_column.replace("/", "_")
 
         if second_name == 'x':
             headers.append(current_column)
         else:
-            headers.append("{} {}".format(current_column, second_name))
+            headers.append("{}_{}".format(current_column, second_name))
     return headers
 
 
