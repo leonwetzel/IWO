@@ -10,7 +10,7 @@ The script `main.python` contains code for cleaning and preparing the data file 
  form the column names. Other operations include the removal of unnecessary rows and the
   addition of a row for the designation of area types.
   
-The script can be run from command line by using `python main.py`. Please note that `pandas` and `numpy` are required for using the script. 
+The script can be run from command line by using `python main.py`. Please note that `pandas` and `numpy` are required for using the script, next to a few additional packages. The required packages can be found in the file `requirements.txt`. 
 
 ## Analysis
 
